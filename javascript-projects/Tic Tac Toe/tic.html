@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Audiowide&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="tac.css">
+    <script src="toe.js" defer></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h1 class="title">Tic·Tac·Toe</h1>
+
+        <!-- ── SETUP ── -->
+        <div id="setup-panel">
+            <h2>Enter Player Names</h2>
+            <div class="player-inputs">
+                <div class="player-field">
+                    <label class="x-label">✕ &nbsp;Player X</label>
+                    <input id="name-x" type="text" maxlength="12" placeholder="Player X" />
+                </div>
+                <div class="player-field">
+                    <label class="o-label">○ &nbsp;Player O</label>
+                    <input id="name-o" type="text" maxlength="12" placeholder="Player O" />
+                </div>
+            </div>
+            <button class="btn btn-start" id="btn-start">START GAME</button>
+        </div>
+
+        <!-- ── GAME ── -->
+        <div id="game-panel" class="hidden">
+
+            <div class="scoreboard">
+                <div class="score-card x-card" id="score-x">
+                    <div class="score-name x-name" id="label-x">Player X</div>
+                    <div class="score-num" id="wins-x">0</div>
+                </div>
+                <div>
+                    <div class="vs-label">VS</div>
+                    <div class="score-mark" id="ties-label">ties: 0</div>
+                </div>
+                <div class="score-card o-card" id="score-o">
+                    <div class="score-name o-name" id="label-o">Player O</div>
+                    <div class="score-num" id="wins-o">0</div>
+                </div>
+            </div>
+
+            <div class="status-bar" id="status"></div>
+
+            <div class="board" id="board">
+                <!-- 9 cells injected by JS -->
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-restart" id="btn-next">NEXT ROUND</button>
+                <button class="btn btn-restart" id="btn-reset">CHANGE PLAYERS</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
