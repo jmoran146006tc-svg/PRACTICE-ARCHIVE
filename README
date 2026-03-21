@@ -1,1 +1,22 @@
+├── backend-projects/
+│   └── .gitkeep
+├── framework-projects/
+│   └── .gitkeep
+├── javascript-projects/
+│   ├── quiz-show/
+│   │   ├── index.html
+│   │   ├── script.js
+│   │   └── style.css
+│   ├── Tic Tac Toe/
+│   │   ├── tac.css
+│   │   ├── tic.html
+│   │   └── toe.js
+│   └── .gitkeep
+├── misc/
+│   └── .gitkeep
+├── php-focused-projects/
+│   └── .gitkeep
+├── static-projects/
+│   └── .gitkeep
+└── README
 
